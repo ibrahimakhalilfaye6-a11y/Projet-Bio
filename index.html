@@ -321,10 +321,10 @@
         <!-- Slides suivantes : images génériques produits naturels -->
         <div class="banner-slide">
           <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1600&q=80" alt="Plantes et herbes naturelles">
-        </div>
+        </div> 
         <div class="banner-slide">
           <img src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=1600&q=80" alt="Produits naturels bio">
-        </div>
+        </div> 
         <div class="banner-slide">
           <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1600&q=80" alt="Huiles et cosmétiques naturels">
         </div>
@@ -475,7 +475,7 @@
         <div class="footer-reseaux">
           <a class="footer-reseau" href="#" title="Facebook">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.07C22 6.42 17.52 2 12 2S2 6.42 2 12.07c0 4.84 3.44 8.85 7.94 9.76v-6.9H7.9v-2.87h2.04V9.83c0-2.02 1.2-3.13 3.03-3.13.88 0 1.81.16 1.81.16v1.99h-1.02c-1.01 0-1.32.63-1.32 1.28v1.52h2.25l-.36 2.87h-1.89v6.9C18.56 20.92 22 16.91 22 12.07z"/></svg>
-          </a>
+          </a> 
           <a class="footer-reseau" href="#" title="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><path d="M16 11.37a4 4 0 1 1-7.99.61A4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg>
           </a>
@@ -544,7 +544,7 @@
         c.appendChild(d);
       });
       document.getElementById('panierTotal').textContent=total.toLocaleString('fr-FR')+' FCFA';
-    }
+    } 
     function changerQte(i,d){panier[i].qte+=d;if(panier[i].qte<=0)panier.splice(i,1);mettreAJourPanier();}
     function supprimerItem(i){const n=panier[i].nom;panier.splice(i,1);mettreAJourPanier();afficherToast(`🗑️ ${n} retiré`);}
     function viderPanier(){panier=[];mettreAJourPanier();afficherToast('🗑️ Panier vidé');}
@@ -589,7 +589,7 @@
       msg+=`💰 *Total : ${total.toLocaleString('fr-FR')} FCFA*%0A%0A`;
       if(message)msg+=`💬 *Note :* ${message}%0A%0A`;
       msg+=`✅ Merci de confirmer ma commande !`;
-      window.open(`https://wa.me/221770956775?text=${msg}`,'_blank');
+      window.open(`https://wa.me/221773799841?text=${msg}`,'_blank');
       fermerModal();viderPanier();
       afficherToast('✅ Commande envoyée sur WhatsApp !');
       ['nom','telephone','adresse','message'].forEach(id=>document.getElementById(id).value='');
